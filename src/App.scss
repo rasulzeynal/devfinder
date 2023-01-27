@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.app{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: Space Mono;
+}
+
+.dark-mode{
+    background-color: #141D2F;
+    color: #fff ;
+}
+
+.light-mode{
+    background-color:#f6f8ff ;
+    color: #000;
+}

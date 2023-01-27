@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import './body.scss';
 
 const Body = () => {
   return (
-    <div>Body</div>
+    <div className='body'>
+      
+    </div>
   )
 }
 

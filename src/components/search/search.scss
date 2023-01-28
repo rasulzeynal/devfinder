@@ -25,13 +25,25 @@
             outline: none;
         }
     }
-    button{
-        width: 106px;
-        height: 50px;
-        color: #fff;
-        border-radius: 10px;
-        border: none;
-        margin-right: 10px;
-        cursor: pointer;
-    }
+    .right-side{
+        display: flex;
+        align-items: center;
+        .result-error{
+            color: #F74646;
+            height: 22px;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 22px;
+            margin-right: 20px;
+        }
+        button{
+            width: 106px;
+            height: 50px;
+            color: #fff;
+            border-radius: 10px;
+            border: none;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    }  
 }

@@ -6,6 +6,7 @@
     border-radius: 15PX;
     box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
     display: flex;
+    margin-bottom: 50px;
     .profile-photo{
         width: 202px;
         display: flex;
@@ -37,7 +38,6 @@
                 font-size: 15px;
                 line-height: 22px;
                 text-align: right;
-                color: #697c9a;
                 margin-right: 48px;
             }
         }
@@ -60,14 +60,12 @@
             font-size: 15px;
             line-height: 25px;
             opacity: 0.75;
-            color: #4b6a9b;
         }
         .followers{
             display: flex;
             justify-content: space-around;
             margin-right: 48px;
             margin-top: 20px;
-            background-color: #F6F8FF;
             border-radius: 10px;
             div{
                 margin: 15px 0 17px;
@@ -75,13 +73,11 @@
                     font-weight: 400;
                     font-size: 13px;
                     line-height: 19px;
-                    color: #4b6a9b;
                 }
                 .count{
                     font-size: 22px;
                     line-height: 33px;
                     font-weight: 700;
-                    color: #2b3442;
                 }
             }
         }
@@ -90,12 +86,14 @@
             margin-top: 37px;
             display: flex;
             justify-content: space-between;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 22px;
             .left{
                 div{
                     display: flex;
                     align-items: center;
                     margin: 10px 0;
-                    color: #4B6A9B;
                     img{
                         margin-right: 19px;
                         width: 13.75px;  
@@ -109,17 +107,15 @@
                         display: flex;
                         align-items: center;
                         margin: 10px 0;
-                        color: #4B6A9B;
                         margin-right:20px;
                         img{
                             margin-right: 19px;
                             width: 13.75px;  
                         }
-    
                     }
                 }
             .not-available{
-                opacity: 0.7;
+                opacity: 0.6;
             }
         }
     }

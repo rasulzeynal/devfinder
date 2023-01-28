@@ -1,80 +1,78 @@
-import React, { useEffect, useState } from 'react';
 import './body.scss';
 import location from "../../assets/icon-location.svg";
 import twitter from "../../assets/icon-twitter.svg";
 import website from "../../assets/icon-website.svg";
 import company from "../../assets/icon-company.svg";
-import profile from "../../assets/profile-icon.png"
-import axios from "axios"
 
  
-const Body = () => {
-  const [userData,setUserData] = useState({});
+const Body = ({data}) => {
   
-  useEffect(() => {
-    const fetchData = async () => {
-      const res = await axios.get("https://api.github.com/users/rasulzeynal");
-      setUserData(res.data);
-    };
-    fetchData();
-  },[])
-  console.log(userData);
+ /*  const monthsShort = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const  formatDate = (dateString) => {
+    const b = dateString.split('T')[0].split('-')
+    const monthNumber = Number(b[1]) - 1;
+    return `Joined  ${b[2]} ${monthsShort[monthNumber]} ${b[0]}`
+  } */
   return (
-    <div className='body'>
-      <div className='profile-photo'>
-        <img src={userData.avatar_url} alt='profile photo'/>
+    <>
+      {data && (
+        <div className='body'>
+          <div className='profile-photo'>
+        <img src={data.data.avatar_url} alt='profile'/>
       </div>
       <div className='info'>
         <div className='name'>
-          <h2>{userData.name}</h2>
-          <p>{userData.created_at}</p>
+          <h2>{data.data.name}</h2>
+          <p>{data.data.created_at}</p>
         </div>
-        <div className='github-name'>@{userData.login}</div>
-        <div className='bio'>{`${userData.bio ? userData.bio : "This profile has no bio "}`}</div>
+        <div className='github-name'>@{data.data.login}</div>
+        <div className='bio'>{`${data.data.bio ? data.data.bio : "This profile has no bio "}`}</div>
         <div className='followers'>
           <div >
             <p className='title'>Repos</p>
-            <p className='count'>{`${userData.public_repos ? userData.public_repos : "0"}`}</p>
+            <p className='count'>{`${data.data.public_repos ? data.data.public_repos : "0"}`}</p>
           </div>
           <div >
             <p className='title'>Folowers</p>
-            <p className='count'>{`${userData.followers ? userData.followers : "0"}`}</p>
+            <p className='count'>{`${data.data.followers ? data.data.followers : "0"}`}</p>
           </div>
           <div >
             <p className='title'>Following</p>
-            <p className='count'>{`${userData.following ? userData.following : "0"}`}</p>
+            <p className='count'>{`${data.data.following ? data.data.following : "0"}`}</p>
           </div>
         </div>
         <div className='footer'>
           <div className='left'>
-            <div className={`${userData.location ? "" : "not-available"}`}>
+            <div className={`${data.data.location ? "" : "not-available"}`}>
               <img src={location} alt="location icon"/>
-              <p>{`${userData.location ? userData.location : "Not Available"}`}</p>
+              <p>{`${data.data.location ? data.data.location : "Not Available"}`}</p>
             </div>
-            <div className={`${userData.login ? "" : "not-available"}`}>
+            <div className={`${data.data.login ? "" : "not-available"}`}>
               <img src={website} alt="website icon"/>
-              <p>{`${userData.login
- ? userData.login
+              <p>{`${data.data.login
+ ? data.data.login
  : "Not Available"}`}</p>
             </div>
           </div>
           <div className='right'>
-          <div className={`${userData.twitter_username? "" : "not-available"}`}>
+          <div className={`${data.data.twitter_username? "" : "not-available"}`}>
               <img src={twitter} alt="twitter icon"/>
-              <p>{`${userData.twitter_username
- ? userData.twitter_username
+              <p>{`${data.data.twitter_username
+ ? data.data.twitter_username
  : "Not Available"}`}</p>
             </div>
-            <div className={`${userData.blog ? "" : "not-available"}`}>
+            <div className={`${data.data.blog ? "" : "not-available"}`}>
               <img src={company} alt="company icon"/>
-              <p>{`${userData.blog
- ? userData.blog
+              <p>{`${data.data.blog
+ ? data.data.blog
  : "Not Available"}`}</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
+        </div>
+      )}
+    </>
   )
 }
 

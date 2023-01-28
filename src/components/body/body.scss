@@ -1,0 +1,126 @@
+.body{
+    width: 730px;
+    height: 419px;
+    margin: 24px auto 0 auto;
+    background-color: #FEFEFE;
+    border-radius: 15PX;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+    display: flex;
+    .profile-photo{
+        width: 202px;
+        display: flex;
+        justify-content: center;
+        img{
+            width: 117px;
+            height: 117px;
+            margin: 48px 37px 0;
+
+        }
+    }
+    .info{
+        width: 100%;
+        .name{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 44px;
+            h2{
+                height: 39px;
+                font-weight: 700;
+                font-size: 26px;
+                line-height: 39px;
+            }
+            p{
+                width: 166px;
+                height: 22px;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 22px;
+                text-align: right;
+                color: #697c9a;
+                margin-right: 48px;
+            }
+        }
+        .github-name{
+            width: 100%;
+            margin-top: 2px;
+            width: 79px;
+            height: 24px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #0079ff;
+        }
+        .bio{
+            width: 480px;
+            height: 25px;
+            margin-top: 20px;
+            margin-right: 48px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            opacity: 0.75;
+            color: #4b6a9b;
+        }
+        .followers{
+            display: flex;
+            justify-content: space-around;
+            margin-right: 48px;
+            margin-top: 20px;
+            background-color: #F6F8FF;
+            border-radius: 10px;
+            div{
+                margin: 15px 0 17px;
+                .title{
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 19px;
+                    color: #4b6a9b;
+                }
+                .count{
+                    font-size: 22px;
+                    line-height: 33px;
+                    font-weight: 700;
+                    color: #2b3442;
+                }
+            }
+        }
+        .footer{
+            margin-right: 48px;
+            margin-top: 37px;
+            display: flex;
+            justify-content: space-between;
+            .left{
+                div{
+                    display: flex;
+                    align-items: center;
+                    margin: 10px 0;
+                    color: #4B6A9B;
+                    img{
+                        margin-right: 19px;
+                        width: 13.75px;  
+                    }
+
+                }
+            }
+            .right{
+                margin-left: 40px;
+                    div{
+                        display: flex;
+                        align-items: center;
+                        margin: 10px 0;
+                        color: #4B6A9B;
+                        margin-right:20px;
+                        img{
+                            margin-right: 19px;
+                            width: 13.75px;  
+                        }
+    
+                    }
+                }
+            .not-available{
+                opacity: 0.7;
+            }
+        }
+    }
+}

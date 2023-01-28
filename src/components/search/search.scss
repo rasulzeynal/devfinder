@@ -2,11 +2,11 @@
     height: 69px;
     border-radius: 15px;
     width: 730px;
-    margin-top: 36px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    margin: 36px auto 0 auto;
+    
     .left-side{
         display: flex;
         img{
@@ -22,9 +22,7 @@
             line-height: 25px;
             border: none;
             font-weight: 400;
-            &:focus{
-                border: none;
-            }
+            outline: none;
         }
     }
     button{
@@ -34,5 +32,6 @@
         border-radius: 10px;
         border: none;
         margin-right: 10px;
+        cursor: pointer;
     }
 }

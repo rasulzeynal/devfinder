@@ -11,7 +11,7 @@ function App() {
       <div className='container'>
          <Header darkMode={darkMode} setDarkMode={setDarkMode}/>
          <Search />
-      {/*  <Body /> */}
+          <Body />
       </div>
        
     </div>

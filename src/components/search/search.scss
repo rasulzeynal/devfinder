@@ -9,6 +9,7 @@
     
     .left-side{
         display: flex;
+        align-items: center;
         img{
             width: 24px;
             height: 24px;
@@ -46,4 +47,35 @@
             cursor: pointer;
         }
     }  
+}
+
+@media (max-width: 750px) {
+    .search{
+        width: 90vw;
+
+        .left-side{
+
+            img{
+                width: 20px;
+                height: 20px;
+                margin: 0 8px;
+            }
+            input{
+                width: 50vw;
+                font-size: 12px;
+            }
+        }
+        .right-side{
+            .result-error{
+                display: none;
+            }
+            button{
+                width: 70px;
+                height: 32px;
+                margin-right: 7px;
+                font-size: 12px;
+                border-radius: 6px;
+            }
+        }
+    }
 }

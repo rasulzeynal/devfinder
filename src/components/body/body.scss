@@ -120,3 +120,119 @@
         }
     }
 }
+@media (max-width: 750px) {
+    .body{
+    width: 90vw;
+    margin: 12px auto 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px -5px rgba(70, 96, 187, 0.198567);
+    .profile-photo{
+        width: 85px;
+        img{
+            width: 70px;
+            height: 70px;
+            margin: 20px 10px 0;
+
+        }
+    }
+    .info{
+        width: 100%;
+        margin-left: 10px;
+        .name{
+            display: block;
+            margin-top: 20px;
+            h2{
+                height: 30px;
+                font-size: 16px;
+                line-height: 20px;
+            }
+            p{
+                display: block;
+                height: 18px;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 19px;
+                text-align: left;
+                margin-right: 20px;
+            }
+        }
+        .github-name{
+            width: 100%;
+            margin-top: 2px;
+            width: 79px;
+            height: 24px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #0079ff;
+        }
+        .bio{
+            width: 480px;
+            height: 25px;
+            margin-top: 20px;
+            margin-right: 48px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            opacity: 0.75;
+        }
+        .followers{
+            display: flex;
+            justify-content: space-around;
+            margin-right: 48px;
+            margin-top: 20px;
+            border-radius: 10px;
+            div{
+                margin: 15px 0 17px;
+                .title{
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 19px;
+                }
+                .count{
+                    font-size: 22px;
+                    line-height: 33px;
+                    font-weight: 700;
+                }
+            }
+        }
+        .footer{
+            margin-right: 48px;
+            margin-top: 37px;
+            display: flex;
+            justify-content: space-between;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 22px;
+            .left{
+                div{
+                    display: flex;
+                    align-items: center;
+                    margin: 10px 0;
+                    img{
+                        margin-right: 19px;
+                        width: 13.75px;  
+                    }
+
+                }
+            }
+            .right{
+                margin-left: 40px;
+                    div{
+                        display: flex;
+                        align-items: center;
+                        margin: 10px 0;
+                        margin-right:20px;
+                        img{
+                            margin-right: 19px;
+                            width: 13.75px;  
+                        }
+                    }
+                }
+            .not-available{
+                opacity: 0.6;
+            }
+        }
+    }
+}
+}

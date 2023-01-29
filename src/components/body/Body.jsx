@@ -7,12 +7,12 @@ import company from "../../assets/icon-company.svg";
  
 const Body = ({data}) => {
   
- /*  const monthsShort = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const monthsShort = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   const  formatDate = (dateString) => {
     const b = dateString.split('T')[0].split('-')
     const monthNumber = Number(b[1]) - 1;
     return `Joined  ${b[2]} ${monthsShort[monthNumber]} ${b[0]}`
-  } */
+  }
   return (
     <>
       {data && (
@@ -23,7 +23,7 @@ const Body = ({data}) => {
       <div className='info'>
         <div className='name'>
           <h2>{data.data.name}</h2>
-          <p>{data.data.created_at}</p>
+          <p>{formatDate(data.data.created_at)}</p>
         </div>
         <div className='github-name'>@{data.data.login}</div>
         <div className='bio'>{`${data.data.bio ? data.data.bio : "This profile has no bio "}`}</div>

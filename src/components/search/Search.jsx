@@ -14,13 +14,14 @@ const Input = ({data,setData}) => {
     try {
       e.preventDefault()
       const response = await axios(`https://api.github.com/users/${inputValue}`)
-      setData(response); 
+      setData(response);
+      setResultError("") 
     } catch (err) {
       setResultError("No results")
+      setData("")
     }
     setInputValue("")
   }
-  console.log(data);
   return (
     <div className='search'>
         <div className='left-side'>

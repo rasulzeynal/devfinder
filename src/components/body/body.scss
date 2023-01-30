@@ -131,7 +131,7 @@
       img {
         width: 70px;
         height: 70px;
-        margin: 20px 20px 0;
+        margin: 20px 15px 0;
         border-radius: 35px;
       }
     }
@@ -169,7 +169,8 @@
       .bottom-section {
         position: absolute;
         left: 20px;
-        width: 90vw;
+        width: 85vw;
+        
         .bio {
           width: 82vw;
           margin-top: 20px;
@@ -177,6 +178,7 @@
         }
         .followers {
           justify-content: space-around;
+          margin-right: 20px;
           div {
             margin: 15px 10px 17px;
             .title {

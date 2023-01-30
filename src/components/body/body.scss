@@ -1,238 +1,230 @@
-.body{
-    width: 730px;
-    height: 419px;
-    margin: 24px auto 0 auto;
-    background-color: #FEFEFE;
-    border-radius: 15PX;
-    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+.body {
+  width: 730px;
+  height: 419px;
+  margin: 24px auto 0 auto;
+  background-color: #fefefe;
+  border-radius: 15px;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  display: flex;
+  margin-bottom: 50px;
+  .profile-photo {
+    width: 202px;
     display: flex;
-    margin-bottom: 50px;
-    .profile-photo{
-        width: 202px;
-        display: flex;
-        justify-content: center;
-        img{
-            width: 117px;
-            height: 117px;
-            margin: 48px 37px 0;
-
-        }
+    justify-content: center;
+    img {
+      width: 117px;
+      height: 117px;
+      margin: 48px 37px 0;
+      border-radius: 50%;
     }
-    .info{
+  }
+  .info {
+    width: 100%;
+    .name {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 44px;
+      h2 {
+        height: 39px;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 39px;
+      }
+      .github-name {
         width: 100%;
-        .name{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 44px;
-            h2{
-                height: 39px;
-                font-weight: 700;
-                font-size: 26px;
-                line-height: 39px;
-            }
-            p{
-                width: 166px;
-                height: 22px;
-                font-weight: 400;
-                font-size: 15px;
-                line-height: 22px;
-                text-align: right;
-                margin-right: 48px;
-            }
-        }
-        .github-name{
-            width: 100%;
-            margin-top: 2px;
-            width: 79px;
-            height: 24px;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
-            color: #0079ff;
-        }
-        .bio{
-            width: 480px;
-            height: 25px;
-            margin-top: 20px;
-            margin-right: 48px;
-            font-weight: 400;
-            font-size: 15px;
-            line-height: 25px;
-            opacity: 0.75;
-        }
-        .followers{
-            display: flex;
-            justify-content: space-around;
-            margin-right: 48px;
-            margin-top: 20px;
-            border-radius: 10px;
-            div{
-                margin: 15px 0 17px;
-                .title{
-                    font-weight: 400;
-                    font-size: 13px;
-                    line-height: 19px;
-                }
-                .count{
-                    font-size: 22px;
-                    line-height: 33px;
-                    font-weight: 700;
-                }
-            }
-        }
-        .footer{
-            margin-right: 48px;
-            margin-top: 37px;
-            display: flex;
-            justify-content: space-between;
-            font-weight: 400;
-            font-size: 15px;
-            line-height: 22px;
-            .left{
-                div{
-                    display: flex;
-                    align-items: center;
-                    margin: 10px 0;
-                    img{
-                        margin-right: 19px;
-                        width: 13.75px;  
-                    }
-
-                }
-            }
-            .right{
-                margin-left: 40px;
-                    div{
-                        display: flex;
-                        align-items: center;
-                        margin: 10px 0;
-                        margin-right:20px;
-                        img{
-                            margin-right: 19px;
-                            width: 13.75px;  
-                        }
-                    }
-                }
-            .not-available{
-                opacity: 0.6;
-            }
-        }
+        margin-top: 2px;
+        width: 79px;
+        height: 24px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #0079ff;
+      }
+      p {
+        width: 166px;
+        height: 22px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: right;
+        margin-right: 48px;
+        margin-top: 10px;
+      }
     }
+    .bio {
+      width: 480px;
+      height: 25px;
+      margin-top: 20px;
+      margin-right: 48px;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      opacity: 0.75;
+    }
+    .followers {
+      display: flex;
+      justify-content: space-around;
+      margin-right: 48px;
+      margin-top: 20px;
+      border-radius: 10px;
+      div {
+        margin: 15px 0 17px;
+        .title {
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 19px;
+        }
+        .count {
+          font-size: 22px;
+          line-height: 33px;
+          font-weight: 700;
+        }
+      }
+    }
+    .footer {
+      margin-right: 48px;
+      margin-top: 37px;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 22px;
+      .left {
+        div {
+          display: flex;
+          align-items: center;
+          margin: 10px 0;
+          img {
+            margin-right: 19px;
+            width: 13.75px;
+          }
+        }
+      }
+      .right {
+        margin-left: 40px;
+        div {
+          display: flex;
+          align-items: center;
+          margin: 10px 0;
+          margin-right: 20px;
+          img {
+            margin-right: 19px;
+            width: 13.75px;
+          }
+        }
+      }
+      .not-available {
+        opacity: 0.6;
+      }
+    }
+  }
 }
 @media (max-width: 750px) {
-    .body{
+  .body {
     width: 90vw;
     margin: 12px auto 0 auto;
     border-radius: 10px;
     box-shadow: 0px 8px 15px -5px rgba(70, 96, 187, 0.198567);
-    .profile-photo{
-        width: 85px;
-        img{
-            width: 70px;
-            height: 70px;
-            margin: 20px 10px 0;
-
-        }
+    position: relative;
+    .profile-photo {
+      width: 100px;
+      img {
+        width: 70px;
+        height: 70px;
+        margin: 20px 20px 0;
+        border-radius: 35px;
+      }
     }
-    .info{
-        width: 100%;
-        margin-left: 10px;
-        .name{
-            display: block;
-            margin-top: 20px;
-            h2{
-                height: 30px;
-                font-size: 16px;
-                line-height: 20px;
-            }
-            p{
-                display: block;
-                height: 18px;
-                font-weight: 400;
-                font-size: 13px;
-                line-height: 19px;
-                text-align: left;
-                margin-right: 20px;
-            }
+    .info {
+      width: 100%;
+      margin-left: 20px;
+      .name {
+        display: block;
+        margin-top: 20px;
+        h2 {
+          height: 30px;
+          font-size: 16px;
+          line-height: 20px;
         }
-        .github-name{
-            width: 100%;
-            margin-top: 2px;
-            width: 79px;
-            height: 24px;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
-            color: #0079ff;
+        .github-name {
+          width: 100%;
+          margin-top: 2px;
+          width: 79px;
+          height: 24px;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #0079ff;
         }
-        .bio{
-            width: 480px;
-            height: 25px;
-            margin-top: 20px;
-            margin-right: 48px;
-            font-weight: 400;
-            font-size: 15px;
-            line-height: 25px;
-            opacity: 0.75;
+        p {
+          display: block;
+          height: 18px;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 19px;
+          text-align: left;
+          margin-right: 20px;
         }
-        .followers{
-            display: flex;
-            justify-content: space-around;
-            margin-right: 48px;
-            margin-top: 20px;
-            border-radius: 10px;
-            div{
-                margin: 15px 0 17px;
-                .title{
-                    font-weight: 400;
-                    font-size: 13px;
-                    line-height: 19px;
-                }
-                .count{
-                    font-size: 22px;
-                    line-height: 33px;
-                    font-weight: 700;
-                }
+      }
+      .bottom-section {
+        position: absolute;
+        left: 20px;
+        width: 90vw;
+        .bio {
+          width: 82vw;
+          margin-top: 20px;
+          font-size: 13px;
+        }
+        .followers {
+          justify-content: space-around;
+          div {
+            margin: 15px 10px 17px;
+            .title {
+              font-size: 11px;
+              line-height: 16px;
             }
-        }
-        .footer{
-            margin-right: 48px;
-            margin-top: 37px;
-            display: flex;
-            justify-content: space-between;
-            font-weight: 400;
-            font-size: 15px;
-            line-height: 22px;
-            .left{
-                div{
-                    display: flex;
-                    align-items: center;
-                    margin: 10px 0;
-                    img{
-                        margin-right: 19px;
-                        width: 13.75px;  
-                    }
-
-                }
+            .count {
+              font-size: 16px;
+              line-height: 24px;
             }
-            .right{
-                margin-left: 40px;
-                    div{
-                        display: flex;
-                        align-items: center;
-                        margin: 10px 0;
-                        margin-right:20px;
-                        img{
-                            margin-right: 19px;
-                            width: 13.75px;  
-                        }
-                    }
-                }
-            .not-available{
-                opacity: 0.6;
-            }
+          }
         }
+        .footer {
+          margin-right: 0px;
+          margin-top: 24px;
+          display: block;
+          font-size: 13px;
+          line-height: 19px;
+          width: 82vw;
+          .left {
+            div {
+              display: flex;
+              align-items: center;
+              margin: 10px 0;
+              img {
+                margin-right: 19px;
+                width: 13.75px;
+              }
+            }
+          }
+          .right {
+            margin-left: 0px;
+            div {
+              display: flex;
+              align-items: center;
+              margin: 10px 0;
+              margin-right: 0px;
+              img {
+                margin-right: 19px;
+                width: 13.75px;
+              }
+            }
+          }
+          .not-available {
+            opacity: 0.6;
+          }
+        }
+      }
     }
-}
+  }
 }

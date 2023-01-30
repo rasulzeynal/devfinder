@@ -22,11 +22,14 @@ const Body = ({data}) => {
       </div>
       <div className='info'>
         <div className='name'>
-          <h2>{data.data.name}</h2>
+          <div>
+            <h2>{data.data.name}</h2> 
+            <div className='github-name'>@{data.data.login}</div>
+          </div>
           <p>{formatDate(data.data.created_at)}</p>
         </div>
-        <div className='github-name'>@{data.data.login}</div>
-        <div className='bio'>{`${data.data.bio ? data.data.bio : "This profile has no bio "}`}</div>
+        <div className='bottom-section'>
+          <div className='bio'>{`${data.data.bio ? data.data.bio : "This profile has no bio "}`}</div>
         <div className='followers'>
           <div >
             <p className='title'>Repos</p>
@@ -68,6 +71,8 @@ const Body = ({data}) => {
  : "Not Available"}`}</p>
             </div>
           </div>
+        </div>
+        
         </div>
       </div>
         </div>
